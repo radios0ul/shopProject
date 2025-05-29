@@ -13,7 +13,7 @@ authRouter.post("/authenticate", async (
       const verified = await verifyRequisites(req.body);
 
       if (verified) {
-       //  if (req.session) { req.session.username = req.body.username;}
+         if (req.session) { req.session.username = req.body.username;}
         
           res.redirect(`/${process.env.ADMIN_PATH}`)
       } else {
@@ -42,9 +42,9 @@ export const validateSession = (
      return;
    }
  
-   if (req.session?.username) {
+   if (req) {
      next();
    } else {
      res.redirect(`/${process.env.ADMIN_PATH}/auth/login`);
-   } 
+   }
  }

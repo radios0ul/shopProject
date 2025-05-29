@@ -1,20 +1,16 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "es5",
-        "sourceMap": true,
-        "resolveJsonModule": true,
-        "esModuleInterop": true,
-        "paths": {
-            "@Shared/*": [
-                "./Shared/*"
-            ]
-        }
-    },
-
-   
-    "include": ["./**/*.ts"],
-   "exclude": [
-       "node_modules"
-   ]
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"baseUrl": ".",
+		"paths": {
+			"@Shared/*": ["Shared/*"]
+		},
+		"typeRoots": ["./types", "./node_modules/@types"]
+	},
+	"include": ["./**/*.ts"],
+	"exclude": ["node_modules"]
 }

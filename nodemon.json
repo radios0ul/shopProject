@@ -1,9 +1,5 @@
 {
-   "ext": "ts,json,ejs,css",
-   "exec": "ts-node ./index.ts","exec": "ts-node --project tsconfig.json ./index.ts",
-   "paths": {
-      "@Shared/*": [
-          "Shared/*"
-      ]
-  }
+	"watch": ["."],
+	"ext": "ts,json,ejs,css",
+	"exec": "ts-node --project tsconfig.json ./index.ts"
 }

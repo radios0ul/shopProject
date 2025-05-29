@@ -1,18 +1,14 @@
 {
-   "compilerOptions": {
-       "module": "commonjs",
-           "target": "es5",
-           "resolveJsonModule": true,
-           "esModuleInterop": true,
-               "sourceMap": true,
-               "paths": {
-                "@Shared/*": [
-                    "../Shared/*"
-                ]
-            }
-   },
-
-   
-   "include": ["./**/*.ts", "./**/*.d.ts", "../types/express-session.d.ts"],
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es5",
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"sourceMap": true,
+		"paths": {
+			"@Shared/*": ["../Shared/*"]
+		}
+	},
+	"include": ["./**/*.ts", "./**/*.d.ts", "../types/express-session.d.ts"],
 	"exclude": ["node_modules"]
 }

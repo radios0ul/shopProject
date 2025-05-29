@@ -1,0 +1,24 @@
+{
+  "name": "shop.project",
+  "version": "1.0.0",
+  "description": "study project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.19",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "mysql2": "^3.14.1"
+  },
+  "devDependencies": {
+    "@types/express-ejs-layouts": "^2.5.4",
+    "@types/express-session": "^1.18.1"
+  }
+}
